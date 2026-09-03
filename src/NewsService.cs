@@ -125,7 +125,7 @@ namespace CanaryLauncherUpdate
             {
                 new NewsItem
                 {
-                    Title = "Welcome to LuneraOT!",
+                    Title = "Welcome to PrimeOT!",
                     Date = DateTime.Now.ToString("dd.MM.yyyy"),
                     Content = "🎮 New Features:\n• Enhanced Battle Royale system\n• 1 vs 1 duels with ranking\n• New PvP zones and events\n• Renovated guild system\n\n⚡ Recent Updates:\n• Improved class balance\n• New epic items and equipment\n• Performance optimization\n• Critical bug fixes",
                     IconType = "0"
@@ -134,7 +134,7 @@ namespace CanaryLauncherUpdate
                 {
                     Title = "Server Updates",
                     Date = DateTime.Now.AddDays(-1).ToString("dd.MM.yyyy"),
-                    Content = "📅 Upcoming Events:\n• Guild tournament this weekend\n• Double experience event\n• New epic quest available\n\n⚠️ Important:\nLuneraOT can be dangerous. Stay alert!",
+                    Content = "📅 Upcoming Events:\n• Guild tournament this weekend\n• Double experience event\n• New epic quest available\n\n⚠️ Important:\nPrimeOT can be dangerous. Stay alert!",
                     IconType = "3"
                 }
             };

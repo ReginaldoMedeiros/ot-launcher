@@ -83,7 +83,7 @@ namespace CanaryLauncherUpdate
 			InitializeComponent();
 			
 			// Set version text
-			VersionText.Text = $"LuneraOT Launcher v{clientConfig.launcherVersion}";
+			VersionText.Text = $"PrimeOT Launcher v{clientConfig.launcherVersion}";
 			
 			// Load and store the logo for reuse in main window
 			try
