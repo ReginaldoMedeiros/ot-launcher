@@ -832,6 +832,17 @@ del ""%~f0"" >nul 2>&1
             }
         }
 
+        // R-L2: SHA256 (hex minusculo) de um arquivo, pra conferir integridade do download.
+        private static string ComputeSha256(string filePath)
+        {
+            using (var sha = System.Security.Cryptography.SHA256.Create())
+            using (var stream = System.IO.File.OpenRead(filePath))
+            {
+                byte[] hash = sha.ComputeHash(stream);
+                return BitConverter.ToString(hash).Replace("-", "").ToLowerInvariant();
+            }
+        }
+
         private async Task ExtractZipFast(string zipPath, string extractPath, IProgress<int> progress = null, CancellationToken cancellationToken = default)
         {
             try
@@ -940,6 +951,27 @@ del ""%~f0"" >nul 2>&1
                     labelDownloadPercent.Text = "Download failed. Please try again.";
                     buttonPlay.Visibility = Visibility.Visible;
                     return;
+                }
+
+                // R-L2: valida integridade do zip baixado ANTES de qualquer operacao destrutiva.
+                string downloadedZip = GetLauncherPath() + "/tibia.zip";
+                string expectedHash = clientConfig.clientChecksum;
+                if (!string.IsNullOrWhiteSpace(expectedHash))
+                {
+                    string actualHash = ComputeSha256(downloadedZip);
+                    if (!string.Equals(actualHash, expectedHash.Trim(), StringComparison.OrdinalIgnoreCase))
+                    {
+                        try { File.Delete(downloadedZip); } catch { }
+                        Dispatcher.Invoke(() =>
+                        {
+                            labelDownloadPercent.Text = "Falha de integridade. Atualizacao cancelada.";
+                            buttonPlay.Visibility = Visibility.Visible;
+                            MessageBox.Show(
+                                "Falha de integridade no download do client (SHA256 nao confere). Atualizacao cancelada.",
+                                LauncherSettings.AppName, MessageBoxButton.OK, MessageBoxImage.Error);
+                        });
+                        return; // aborta: nao extrai
+                    }
                 }
 
                 labelDownloadPercent.Text = "Extracting files...";
