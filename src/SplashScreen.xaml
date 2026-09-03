@@ -11,7 +11,7 @@
 		ResizeMode="NoResize"
 		WindowStyle="None"
 		WindowStartupLocation="CenterScreen"
-		Title="Loading PrimeOT Launcher" Height="500" Width="800">
+		Title="Loading GB-OTS Launcher" Height="500" Width="800">
 	<!-- Main Container with rounded corners to match MainWindow -->
 	<Border CornerRadius="15" Background="Transparent" BorderBrush="#333" BorderThickness="1">
 		<Grid>
@@ -49,7 +49,7 @@
 				Foreground="White"
 				FontSize="18"
 				FontWeight="Bold"
-				Text="Initializing PrimeOT Launcher..."
+				Text="Initializing GB-OTS Launcher..."
 				TextAlignment="Center"/>
 			
 			<!-- Progress bar -->
@@ -98,7 +98,7 @@
 				Margin="0, 0, 0, 20"
 				Foreground="#666666"
 				FontSize="10"
-				Text="PrimeOT Launcher v1.2"
+				Text="GB-OTS Launcher v1.2"
 				TextAlignment="Center"/>
 			</Grid>
 		</Grid>

@@ -1,10 +1,10 @@
 namespace LauncherConfig
 {
-    // Ponto unico de configuracao do launcher PrimeOT.
+    // Ponto unico de configuracao do launcher GB-OTS.
     // Trocar URLs aqui quando o dominio + HTTPS entrarem — sem mexer no resto do codigo.
     public static class LauncherSettings
     {
-        public const string AppName = "PrimeOT"; // provisorio
+        public const string AppName = "GB-OTS"; // provisorio
 
         // Manifesto de update (GitHub, HTTPS) — R-L1.
         public const string LauncherConfigUrl =

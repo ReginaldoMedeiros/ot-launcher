@@ -16,7 +16,7 @@
 		ResizeMode="NoResize"
 		WindowState="Normal"
 		WindowStartupLocation="CenterScreen"
-		Title="PrimeOT Launcher"
+		Title="GB-OTS Launcher"
 		Loaded="TibiaLauncher_Load"
 		AllowsTransparency="True">
 	<!-- Main Container with straight edges -->
@@ -235,7 +235,7 @@
 					<ToolTip Background="#2a2a2a" BorderBrush="#555" Foreground="White">
 						<TextBlock
 							FontWeight="Bold"
-							Text="Buy PrimeOT Coins">
+							Text="Buy GB-OTS Coins">
 						</TextBlock>
 					</ToolTip>
 				</Button.ToolTip>
@@ -481,7 +481,7 @@
 								FontSize="15"
 								FontWeight="Bold"
 								Foreground="#1a1a1a"
-								Text="🏆 PrimeOT NEWS &amp; UPDATES"/>
+								Text="🏆 GB-OTS NEWS &amp; UPDATES"/>
 						</Border>
 						
 						<!-- Use Canvas for absolute positioning of image -->
@@ -600,7 +600,7 @@
 		MouseLeftButtonDown="BoostedCreaturesPanel_MouseLeftButtonDown">
 		<Border.ToolTip>
 			<ToolTip Background="#2a2a2a" BorderBrush="#555" Foreground="White">
-				<TextBlock Text="Click to force refresh boosted creatures from PrimeOT" FontWeight="Bold"/>
+				<TextBlock Text="Click to force refresh boosted creatures from GB-OTS" FontWeight="Bold"/>
 			</ToolTip>
 		</Border.ToolTip>
 		<Border.Effect>
@@ -653,7 +653,7 @@
 		MouseLeftButtonDown="BoostedCreaturesPanel_MouseLeftButtonDown">
 		<Border.ToolTip>
 			<ToolTip Background="#2a2a2a" BorderBrush="#555" Foreground="White">
-				<TextBlock Text="Click to force refresh boosted creatures from PrimeOT" FontWeight="Bold"/>
+				<TextBlock Text="Click to force refresh boosted creatures from GB-OTS" FontWeight="Bold"/>
 			</ToolTip>
 		</Border.ToolTip>
 		<Border.Effect>
@@ -754,7 +754,7 @@
 						MouseLeftButtonDown="CountdownsPanel_MouseLeftButtonDown">
 						<Border.ToolTip>
 							<ToolTip Background="#2a2a2a" BorderBrush="#555" Foreground="White">
-								<TextBlock Text="Click to refresh event countdowns from PrimeOT" FontWeight="Bold"/>
+								<TextBlock Text="Click to refresh event countdowns from GB-OTS" FontWeight="Bold"/>
 							</ToolTip>
 						</Border.ToolTip>
 						<Grid>
@@ -799,7 +799,7 @@
 						MouseLeftButtonDown="CountdownsPanel_MouseLeftButtonDown">
 						<Border.ToolTip>
 							<ToolTip Background="#2a2a2a" BorderBrush="#555" Foreground="White">
-								<TextBlock Text="Click to refresh event countdowns from PrimeOT" FontWeight="Bold"/>
+								<TextBlock Text="Click to refresh event countdowns from GB-OTS" FontWeight="Bold"/>
 							</ToolTip>
 						</Border.ToolTip>
 						<Grid>

@@ -201,7 +201,7 @@ namespace CanaryLauncherUpdate
 
             // Asignar nombre por defecto si está vacío
             string shortcutName = string.IsNullOrWhiteSpace(clientConfig.namelauncher)
-                ? "PrimeOT"
+                ? "GB-OTS"
                 : clientConfig.namelauncher;
 
             string shortcutPath = Path.Combine(desktopPath, shortcutName + ".lnk");
@@ -1330,7 +1330,7 @@ del ""%~f0"" >nul 2>&1
 
         private string GetDefaultNewsContent()
         {
-            return "🏆 BIENVENIDOS A PrimeOT!\n\n" +
+            return "🏆 BIENVENIDOS A GB-OTS!\n\n" +
                    "🎮 Nuevas Características:\n" +
                    "• Sistema de Battle Royale mejorado\n" +
                    "• Duelos 1 vs 1 con ranking\n" +
@@ -1342,7 +1342,7 @@ del ""%~f0"" >nul 2>&1
                    "• Optimización de rendimiento\n" +
                    "• Corrección de bugs críticos\n\n" +
                    "⚠️ Importante:\n" +
-                   "PrimeOT puede ser peligroso. ¡Mantente alerta!\n\n" +
+                   "GB-OTS puede ser peligroso. ¡Mantente alerta!\n\n" +
                    "📅 Próximos Eventos:\n" +
                    "• Torneo de guilds este fin de semana\n" +
                    "• Evento de experiencia doble\n" +
@@ -1780,7 +1780,7 @@ del ""%~f0"" >nul 2>&1
                         Foreground = new SolidColorBrush(Colors.White),
                         Content = new TextBlock
                         {
-                            Text = "Click to visit PrimeOT.com",
+                            Text = "Click to visit GB-OTS",
                             FontWeight = FontWeights.Bold
                         }
                     };

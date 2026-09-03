@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Publica uma versao nova do client para o launcher PrimeOT.
+Publica uma versao nova do client para o launcher GB-OTS.
 
 Uso:
     python tools/publicar-client.py <versao> <pasta_do_client>
@@ -57,7 +57,7 @@ def gh_release(tag, zip_path, version):
     """Cria o release; se a tag ja existir, faz upload com --clobber."""
     try:
         run(["gh", "release", "create", tag, zip_path,
-             "-R", REPO, "-t", tag, "-n", f"Client PrimeOT {version} (engine, sem assets CipSoft)"])
+             "-R", REPO, "-t", tag, "-n", f"Client GB-OTS {version} (engine, sem assets CipSoft)"])
     except subprocess.CalledProcessError:
         print("  (release ja existe? tentando upload --clobber)")
         run(["gh", "release", "upload", tag, zip_path, "-R", REPO, "--clobber"])

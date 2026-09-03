@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 """
-Empacota o launcher PrimeOT pronto pra enviar ao tester.
+Empacota o launcher GB-OTS pronto pra enviar ao tester.
 
 Uso: python tools/empacotar-launcher.py
 
-Saida: D:/Otserver/_dist/PrimeOT-Launcher.zip
-Conteudo: PrimeOT-Launcher.exe + as DLLs (Ionic.Zip, Newtonsoft.Json).
+Saida: D:/Otserver/_dist/GB-OTS-Launcher.zip
+Conteudo: GB-OTS-Launcher.exe + as DLLs (Ionic.Zip, Newtonsoft.Json).
 O tester extrai numa pasta vazia e abre o exe; o launcher cria a pasta do
 client e baixa tudo sozinho.
 """
@@ -13,11 +13,11 @@ import os, shutil, zipfile
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BIN = os.path.join(REPO_ROOT, "bin", "Release")
-OUT_DIR = r"D:\Otserver\_dist\PrimeOT-Launcher"
-OUT_ZIP = r"D:\Otserver\_dist\PrimeOT-Launcher.zip"
+OUT_DIR = r"D:\Otserver\_dist\GB-OTS-Launcher"
+OUT_ZIP = r"D:\Otserver\_dist\GB-OTS-Launcher.zip"
 
 FILES = [
-    ("CanaryLauncher.exe", "PrimeOT-Launcher.exe"),
+    ("CanaryLauncher.exe", "GB-OTS-Launcher.exe"),
     ("Ionic.Zip.dll", "Ionic.Zip.dll"),
     ("Newtonsoft.Json.dll", "Newtonsoft.Json.dll"),
 ]
@@ -40,10 +40,10 @@ def main():
     # LEIA-ME curto pro tester
     with open(os.path.join(OUT_DIR, "LEIA-ME.txt"), "w", encoding="utf-8") as f:
         f.write(
-            "PrimeOT Launcher\n"
+            "GB-OTS Launcher\n"
             "================\n\n"
             "1. Extraia esta pasta em qualquer lugar (ex.: Desktop).\n"
-            "2. Abra PrimeOT-Launcher.exe.\n"
+            "2. Abra GB-OTS-Launcher.exe.\n"
             "3. Ele baixa o client e os graficos sozinho (a 1a vez demora, ~130MB de assets).\n"
             "4. Clique em PLAY, digite email e senha, entre.\n\n"
             "IMPORTANTE (alpha): mantenha o Tailscale conectado — o servidor so existe\n"
