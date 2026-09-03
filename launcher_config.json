@@ -1,0 +1,13 @@
+{
+  "clientVersion": "0.0.0",
+  "launcherVersion": "1.0.0",
+  "clientFolder": "PrimeOT",
+  "newClientUrl": "",
+  "clientChecksum": "",
+  "clientExecutable": "otclient.exe",
+  "replaceFolders": true,
+  "replaceFolderName": [ { "name": "modules" }, { "name": "mods" } ],
+  "newLauncherUrl": "",
+  "newConfigUrl": "https://raw.githubusercontent.com/ReginaldoMedeiros/ot-launcher/main/launcher_config.json",
+  "namelauncher": "PrimeOT Launcher"
+}
