@@ -1,12 +1,19 @@
 {
-  "clientVersion": "0.0.0",
+  "clientVersion": "1.0.0",
   "launcherVersion": "1.0.0",
   "clientFolder": "PrimeOT",
-  "newClientUrl": "",
-  "clientChecksum": "",
+  "newClientUrl": "https://github.com/ReginaldoMedeiros/ot-launcher/releases/download/client-v1.0.0/client_1.0.0.zip",
+  "clientChecksum": "bd5a5e9d739c1d6883193822063a406bf05f7be4488dfdbd195d7d4289c2f68d",
   "clientExecutable": "otclient.exe",
   "replaceFolders": true,
-  "replaceFolderName": [ { "name": "modules" }, { "name": "mods" } ],
+  "replaceFolderName": [
+    {
+      "name": "modules"
+    },
+    {
+      "name": "mods"
+    }
+  ],
   "newLauncherUrl": "",
   "newConfigUrl": "https://raw.githubusercontent.com/ReginaldoMedeiros/ot-launcher/main/launcher_config.json",
   "namelauncher": "PrimeOT Launcher"
