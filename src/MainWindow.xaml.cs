@@ -441,7 +441,7 @@ namespace CanaryLauncherUpdate
                 buttonPlay.Visibility = Visibility.Visible;
                 buttonPlay_tooltip.Text = "Play";
                 // Set clientDownloaded to true if the client executable exists
-                if (File.Exists(GetLauncherPath() + "/bin/" + clientExecutableName))
+                if (File.Exists(GetLauncherPath() + "/" + clientExecutableName))
                 {
                     clientDownloaded = true;
                 }
@@ -810,10 +810,10 @@ del ""%~f0"" >nul 2>&1
             else
             {
                 // No update needed, just start the client
-                if (File.Exists(GetLauncherPath() + "/bin/" + clientExecutableName))
+                if (File.Exists(GetLauncherPath() + "/" + clientExecutableName))
                 {
                     // Start the client and close the launcher
-                    Process.Start(GetLauncherPath() + "/bin/" + clientExecutableName);
+                    Process.Start(GetLauncherPath() + "/" + clientExecutableName);
                     // Close the launcher completely
                     this.Close();
                 }
