@@ -812,8 +812,17 @@ del ""%~f0"" >nul 2>&1
                 // No update needed, just start the client
                 if (File.Exists(GetLauncherPath() + "/" + clientExecutableName))
                 {
-                    // Start the client and close the launcher
-                    Process.Start(GetLauncherPath() + "/" + clientExecutableName);
+                    // Inicia o client SEM a janela de console (o exe e CUI/console).
+                    // O log continua sendo salvo em otclient.log. CreateNoWindow +
+                    // UseShellExecute=false suprime o console preto pro jogador.
+                    var psi = new ProcessStartInfo
+                    {
+                        FileName = GetLauncherPath() + "/" + clientExecutableName,
+                        WorkingDirectory = GetLauncherPath(),
+                        UseShellExecute = false,
+                        CreateNoWindow = true
+                    };
+                    Process.Start(psi);
                     // Close the launcher completely
                     this.Close();
                 }
