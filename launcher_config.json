@@ -1,9 +1,9 @@
 {
-  "clientVersion": "1.0.3",
+  "clientVersion": "1.0.4",
   "launcherVersion": "1.0.0",
   "clientFolder": "GB-OTS",
-  "newClientUrl": "https://github.com/ReginaldoMedeiros/ot-launcher/releases/download/client-v1.0.3/client_1.0.3.zip",
-  "clientChecksum": "4df77570aefddf0637f0e3ceaa10959951b9c0aa7170464f24ddafa0b141642a",
+  "newClientUrl": "https://github.com/ReginaldoMedeiros/ot-launcher/releases/download/client-v1.0.4/client_1.0.4.zip",
+  "clientChecksum": "c2aed4e606d7132c042233296297ad96af5f4e3b87d590e8f2bfc0f42ed625c4",
   "clientExecutable": "otclient.exe",
   "replaceFolders": true,
   "replaceFolderName": [
